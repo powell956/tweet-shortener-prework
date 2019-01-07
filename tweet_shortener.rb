@@ -40,8 +40,6 @@ end
 def bulk_tweet_shortener(tweets)
   tweets.map! { |tweet| word_substituter(tweet) }
   tweets.each { |tweet| puts tweet }
-  binding.pry
-
 end
 
 tweet_one = "Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!"
