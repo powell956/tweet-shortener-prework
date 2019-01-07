@@ -25,7 +25,7 @@ def word_substituter(tweet)
   words.each do |word|
     if subs.keys.any? { |word_to_replace| word }
       subs.each do |to_sub, sub_with|
-        if word == to_sub
+        if word.downcase == to_sub
           words.delete_at(i)
           words.insert(i, sub_with)
         end
